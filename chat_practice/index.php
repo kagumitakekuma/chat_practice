@@ -6,8 +6,8 @@ session_start();
 include("function.php");
 loginCheck();
 
-// $username=$SESSION["name"];
-// $msg="ようこそ".htmlspecialchars($username,\ENT_QUOTES,"UTF-8")."さん";
+$username=$SESSION["name"];
+$msg="ようこそ".htmlspecialchars($username,\ENT_QUOTES,"UTF-8")."さん";
 
 //finction.phpで関数化してあるもの
 $pdo=dbConnect();
